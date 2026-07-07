@@ -1,0 +1,24 @@
+{
+  "name": "@aci/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && vite build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "dev": "vite --host 0.0.0.0 --port 4311",
+    "preview": "vite preview --host 0.0.0.0 --port 4312"
+  },
+  "dependencies": {
+    "@aci/domain": "0.1.0",
+    "lucide-react": "0.468.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.2.1",
+    "typescript": "5.4.5",
+    "vite": "4.5.3"
+  }
+}

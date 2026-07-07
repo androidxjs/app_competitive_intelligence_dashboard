@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+coverage/
+data/app-state.json
+*.log
+.DS_Store

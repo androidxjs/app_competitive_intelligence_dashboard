@@ -1,0 +1,28 @@
+{
+  "name": "app-competitive-intelligence-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @aci/domain && npm run build -w @aci/connectors && npm run build -w @aci/ai && npm run build -w @aci/reporting && npm run build -w @aci/api && npm run build -w @aci/worker && npm run build -w @aci/web",
+    "lint": "npm run typecheck -w @aci/domain && npm run typecheck -w @aci/connectors && npm run typecheck -w @aci/ai && npm run typecheck -w @aci/reporting && npm run typecheck -w @aci/api && npm run typecheck -w @aci/worker && npm run typecheck -w @aci/web",
+    "test": "npm run test -w @aci/domain && npm run test -w @aci/connectors && npm run test -w @aci/ai && npm run test -w @aci/reporting && npm run test -w @aci/web",
+    "dev:web": "npm run dev -w @aci/web",
+    "dev:api": "npm run dev -w @aci/api",
+    "dev:worker": "npm run dev -w @aci/worker"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.69",
+    "@types/react-dom": "18.2.22",
+    "@vitejs/plugin-react": "4.2.1",
+    "tsx": "3.14.0",
+    "typescript": "5.4.5",
+    "vite": "4.5.3",
+    "vitest": "0.34.6"
+  }
+}
