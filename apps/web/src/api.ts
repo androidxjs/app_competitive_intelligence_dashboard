@@ -1,7 +1,7 @@
 import { buildOverviewMetrics, createSeedState, getScopedState } from "@aci/domain";
 import type { Channel, DashboardState, JobType, OverviewMetrics, ScopedDashboardState } from "@aci/domain";
 
-const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4310";
+const API_BASE = import.meta.env.VITE_API_URL ?? (import.meta.env.DEV ? "http://localhost:4310" : "");
 
 export interface ApiStateResponse {
   state: ScopedDashboardState;

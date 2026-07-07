@@ -13,7 +13,8 @@
     "test": "npm run test -w @aci/domain && npm run test -w @aci/connectors && npm run test -w @aci/ai && npm run test -w @aci/reporting && npm run test -w @aci/web",
     "dev:web": "npm run dev -w @aci/web",
     "dev:api": "npm run dev -w @aci/api",
-    "dev:worker": "npm run dev -w @aci/worker"
+    "dev:worker": "npm run dev -w @aci/worker",
+    "build:web:pages": "GITHUB_PAGES=true npm run build -w @aci/web"
   },
   "devDependencies": {
     "@types/node": "20.11.30",
