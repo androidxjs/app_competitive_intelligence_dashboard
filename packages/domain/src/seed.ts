@@ -1,5 +1,5 @@
-import { dateOnly, isoNow } from "./ids";
-import type { DashboardState } from "./types";
+import { dateOnly, isoNow } from "./ids.js";
+import type { DashboardState } from "./types.js";
 
 export function createSeedState(): DashboardState {
   const now = isoNow();

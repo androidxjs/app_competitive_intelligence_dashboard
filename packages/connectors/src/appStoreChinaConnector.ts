@@ -1,5 +1,5 @@
 import { createId, isoNow } from "@aci/domain";
-import type { StoreConnector, StoreConnectorResult } from "./types";
+import type { StoreConnector, StoreConnectorResult } from "./types.js";
 
 function guessAppName(url: string): string {
   const match = url.match(/\/app\/([^/]+)/);

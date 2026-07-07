@@ -1,7 +1,7 @@
 import type { Channel } from "@aci/domain";
-import { appStoreChinaConnector } from "./appStoreChinaConnector";
-import { manualSampleConnector } from "./manualConnector";
-import type { StoreConnector } from "./types";
+import { appStoreChinaConnector } from "./appStoreChinaConnector.js";
+import { manualSampleConnector } from "./manualConnector.js";
+import type { StoreConnector } from "./types.js";
 
 export class ChannelAdapterRegistry {
   private readonly connectors: StoreConnector[];

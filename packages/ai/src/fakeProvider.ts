@@ -1,6 +1,6 @@
 import { createId, isoNow } from "@aci/domain";
 import type { Feature, Insight, Review } from "@aci/domain";
-import type { FeatureExtractionInput, InsightGenerationInput, LLMProvider } from "./provider";
+import type { FeatureExtractionInput, InsightGenerationInput, LLMProvider } from "./provider.js";
 
 const TOPIC_RULES = [
   { category: "AI / 模板机会", keywords: ["AI", "写真", "发型", "模板", "证件照"], severity: "high" as const },

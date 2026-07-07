@@ -1,4 +1,4 @@
-import { getScopedState } from "./state";
+import { getScopedState } from "./state.js";
 import type {
   ActionRecommendation,
   AppSnapshot,
@@ -16,7 +16,7 @@ import type {
   PriceSignal,
   Review,
   ScopedDashboardState
-} from "./types";
+} from "./types.js";
 
 type StorePlatform = Exclude<Platform, "web">;
 

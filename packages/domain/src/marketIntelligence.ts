@@ -1,4 +1,4 @@
-import { getScopedState } from "./state";
+import { getScopedState } from "./state.js";
 import type {
   AppSnapshot,
   AsoKeywordOpportunity,
@@ -17,7 +17,7 @@ import type {
   ScopedDashboardState,
   StoreMetadataField,
   StoreMetadataSignal
-} from "./types";
+} from "./types.js";
 
 type StorePlatform = Exclude<Platform, "web">;
 

@@ -17,7 +17,7 @@ import type {
   SocialAuthConfig,
   SocialSample,
   ScopedDashboardState
-} from "./types";
+} from "./types.js";
 
 export function createEmptyState(): DashboardState {
   return {

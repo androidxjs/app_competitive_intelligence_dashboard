@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: app-competitive-intelligence-api
+    runtime: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm ci && npm run build:api
+    startCommand: npm run start -w @aci/api
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.30
+      - key: ACI_DATA_FILE
+        value: /tmp/app-competitive-intelligence-state.json

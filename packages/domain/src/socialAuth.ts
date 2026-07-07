@@ -1,5 +1,5 @@
-import { createId, isoNow } from "./ids";
-import type { SocialAuthConfig, SocialAuthPlatform } from "./types";
+import { createId, isoNow } from "./ids.js";
+import type { SocialAuthConfig, SocialAuthPlatform } from "./types.js";
 
 export interface SocialAuthConfigInput {
   ownedAppId: string;

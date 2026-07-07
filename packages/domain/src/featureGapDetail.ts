@@ -1,4 +1,4 @@
-import { getScopedState } from "./state";
+import { getScopedState } from "./state.js";
 import type {
   CompetitiveAlertSeverity,
   DashboardState,
@@ -9,7 +9,7 @@ import type {
   Review,
   ScopedDashboardState,
   SocialSample
-} from "./types";
+} from "./types.js";
 
 function featureDecision(feature: Feature): FeatureGapDetail["decision"] {
   const competitorOwnedCount = Object.values(feature.competitorSupport).filter((value) => value === "owned" || value === "advantage").length;

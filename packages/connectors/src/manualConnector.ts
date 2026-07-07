@@ -1,5 +1,5 @@
 import { createId, isoNow } from "@aci/domain";
-import type { StoreConnector, StoreConnectorResult } from "./types";
+import type { StoreConnector, StoreConnectorResult } from "./types.js";
 
 const TOPIC_SAMPLES = [
   "AI 模板更新快，最近的写真和发型效果比较自然。",

@@ -1,5 +1,5 @@
-import { isoNow } from "./ids";
-import { getScopedState } from "./state";
+import { isoNow } from "./ids.js";
+import { getScopedState } from "./state.js";
 import type {
   ActionRecommendation,
   Competitor,
@@ -14,7 +14,7 @@ import type {
   RecommendationEffort,
   RecommendationOwnerRole,
   ScopedDashboardState
-} from "./types";
+} from "./types.js";
 
 type RecommendationDraft = Omit<ActionRecommendation, "id" | "ownedAppId" | "status" | "createdAt" | "updatedAt">;
 

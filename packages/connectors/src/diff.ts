@@ -1,5 +1,5 @@
 import type { AppSnapshot } from "@aci/domain";
-import type { SnapshotDiff } from "./types";
+import type { SnapshotDiff } from "./types.js";
 
 function normalizeScreenshots(value: string[]): string {
   return value.join(" / ");

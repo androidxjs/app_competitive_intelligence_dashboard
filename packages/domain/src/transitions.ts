@@ -1,4 +1,4 @@
-import { createId, isoNow } from "./ids";
+import { createId, isoNow } from "./ids.js";
 import type {
   ActionRecommendation,
   Competitor,
@@ -15,7 +15,7 @@ import type {
   ReportStatus,
   RequirementCandidate,
   RequirementStatus
-} from "./types";
+} from "./types.js";
 
 export interface CreateOwnedAppInput {
   projectId: string;

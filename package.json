@@ -8,6 +8,7 @@
     "apps/*"
   ],
   "scripts": {
+    "build:api": "npm run build -w @aci/domain && npm run build -w @aci/connectors && npm run build -w @aci/ai && npm run build -w @aci/reporting && npm run build -w @aci/api",
     "build": "npm run build -w @aci/domain && npm run build -w @aci/connectors && npm run build -w @aci/ai && npm run build -w @aci/reporting && npm run build -w @aci/api && npm run build -w @aci/worker && npm run build -w @aci/web",
     "lint": "npm run typecheck -w @aci/domain && npm run typecheck -w @aci/connectors && npm run typecheck -w @aci/ai && npm run typecheck -w @aci/reporting && npm run typecheck -w @aci/api && npm run typecheck -w @aci/worker && npm run typecheck -w @aci/web",
     "test": "npm run test -w @aci/domain && npm run test -w @aci/connectors && npm run test -w @aci/ai && npm run test -w @aci/reporting && npm run test -w @aci/web",

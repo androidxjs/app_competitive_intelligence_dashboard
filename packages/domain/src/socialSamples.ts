@@ -1,11 +1,11 @@
-import { createId, isoNow } from "./ids";
+import { createId, isoNow } from "./ids.js";
 import type {
   CompetitiveAlertSeverity,
   Evidence,
   SocialPlatform,
   SocialSample,
   SocialSignalType
-} from "./types";
+} from "./types.js";
 
 export interface CreateSocialSampleInput {
   ownedAppId: string;
